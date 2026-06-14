@@ -1,5 +1,38 @@
 # Changelog
 
+## [0.19.0](https://github.com/Gitlawb/openclaude/compare/v0.18.0...v0.19.0) (2026-06-14)
+
+
+### Features
+
+* add NEAR AI provider integration ([#1594](https://github.com/Gitlawb/openclaude/issues/1594)) ([eacc7d8](https://github.com/Gitlawb/openclaude/commit/eacc7d8facc6e94acacc58ec205f377681107c50))
+* add Vietnamese i18n for slash command descriptions ([#1431](https://github.com/Gitlawb/openclaude/issues/1431)) ([89d0531](https://github.com/Gitlawb/openclaude/commit/89d05317b6b6f6c45008ff7074e74a3638d3246b))
+* **agent-routing:** model-only agent routes (set the verifier or any agent's model on the current provider) ([#1617](https://github.com/Gitlawb/openclaude/issues/1617)) ([9e902db](https://github.com/Gitlawb/openclaude/commit/9e902db86617aba657235b5687a47080173e4bbf))
+* **compact:** auto-compact prompt on /resume + determinate progress bar ([#1386](https://github.com/Gitlawb/openclaude/issues/1386)) ([716c1d4](https://github.com/Gitlawb/openclaude/commit/716c1d47f68349f5f5f151090292d2544cf83cf9))
+* **gemini-vertex:** native Gemini Vertex client and auth helpers (1/3) ([#1607](https://github.com/Gitlawb/openclaude/issues/1607)) ([b9c65de](https://github.com/Gitlawb/openclaude/commit/b9c65deabc00d7bdc622c8d30087f2702c8910f1))
+* **provider:** add Fireworks AI as official OpenAI-compatible provider ([#1590](https://github.com/Gitlawb/openclaude/issues/1590)) ([0b24b60](https://github.com/Gitlawb/openclaude/commit/0b24b60ce92a108ab062c1a78ce101d4f951c45c))
+* **web:** rebuild landing as Astro static site with gitlawb theme and full docs ([#1606](https://github.com/Gitlawb/openclaude/issues/1606)) ([d08593d](https://github.com/Gitlawb/openclaude/commit/d08593de922891bff954985d716e9a906d01538e))
+
+
+### Bug Fixes
+
+* avoid file suggestion OOM on large repos ([#1074](https://github.com/Gitlawb/openclaude/issues/1074)) ([8f92346](https://github.com/Gitlawb/openclaude/commit/8f92346cf403f41a2176e408b93a814da8c0fd79))
+* **copilot:** limit sub-agent concurrency to reduce Premium Request usage ([#678](https://github.com/Gitlawb/openclaude/issues/678)) ([#1534](https://github.com/Gitlawb/openclaude/issues/1534)) ([822eff3](https://github.com/Gitlawb/openclaude/commit/822eff39d1707455f9b0723ff2761f8c412b56a5))
+* **ollama:** parse text-based tool calls as fallback ([#1053](https://github.com/Gitlawb/openclaude/issues/1053)) ([#1076](https://github.com/Gitlawb/openclaude/issues/1076)) ([a3f144b](https://github.com/Gitlawb/openclaude/commit/a3f144bbf26be5c7676e9a2f79a747186867f021))
+* **plugins:** prevent ENOENT on Windows marketplace cache finalization ([#1500](https://github.com/Gitlawb/openclaude/issues/1500)) ([#1531](https://github.com/Gitlawb/openclaude/issues/1531)) ([a7d6580](https://github.com/Gitlawb/openclaude/commit/a7d65805213b92d3f6eceb46c0c0cc2ffa9dcb01))
+* rename "Claude" to "OpenClaude" in feedback survey prompt ([#1598](https://github.com/Gitlawb/openclaude/issues/1598)) ([d00b105](https://github.com/Gitlawb/openclaude/commit/d00b1050f5acd07b12fc49bcb4802ab446fef27a))
+* **session:** filter Anthropic-only params from 3P provider requests ([#248](https://github.com/Gitlawb/openclaude/issues/248)) ([#1533](https://github.com/Gitlawb/openclaude/issues/1533)) ([db2d093](https://github.com/Gitlawb/openclaude/commit/db2d093af3a0ad0dc5fc1b546faa44e56800362f))
+* **tool-search:** enable MCP tool deferral on converted-wire providers ([#1608](https://github.com/Gitlawb/openclaude/issues/1608)) ([614a8d9](https://github.com/Gitlawb/openclaude/commit/614a8d9c54fbe3b15c2a907f8de4ad00fa3a3d10))
+* **typecheck:** correct fetch mock type casts in test files ([#1592](https://github.com/Gitlawb/openclaude/issues/1592)) ([794ccd4](https://github.com/Gitlawb/openclaude/commit/794ccd4f9e7d96d1eac9e28f97f04e09caf4f8b6))
+* **typecheck:** expand cachedMicrocompact stub exports ([#1591](https://github.com/Gitlawb/openclaude/issues/1591)) ([bb19392](https://github.com/Gitlawb/openclaude/commit/bb19392e699a531e8f4b6c8dad3bebbcd2454a51))
+* **typecheck:** recreate missing CLI Transport interface ([#1581](https://github.com/Gitlawb/openclaude/issues/1581)) ([3752dfe](https://github.com/Gitlawb/openclaude/commit/3752dfe6f7165285951f2cc534f2a8a01e31a319))
+* **typecheck:** reduce error baseline by 89 across 8 files ([#1595](https://github.com/Gitlawb/openclaude/issues/1595)) ([9db9427](https://github.com/Gitlawb/openclaude/commit/9db9427f2961ff13a0d24c4f3261fd9ad5bfa932))
+
+
+### Performance Improvements
+
+* **cli:** restore --version fast path with dynamic provider imports ([#1611](https://github.com/Gitlawb/openclaude/issues/1611)) ([a3a3c36](https://github.com/Gitlawb/openclaude/commit/a3a3c3659dbe6b51c3e4027b990bf77b6b020a1a))
+
 ## [0.18.0](https://github.com/Gitlawb/openclaude/compare/v0.17.1...v0.18.0) (2026-06-10)
 
 
